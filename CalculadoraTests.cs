@@ -23,4 +23,18 @@ public class CalculadoraTests
         //Assert - Validar se tudo isso tem o resultado esperado.
         Assert.Equal(15, resultado);
     }
+
+    [Fact]
+    public void DeveSomar10Com10ERetonar20()
+    {
+        //Arrange - Montar cenário.
+        int num1 = 10;
+        int num2 = 10;
+
+        //Act - Chamar o cenário e executar a ação.
+        int resultado = _calc.somar(num1, num2);
+
+        //Assert - Validar se tudo isso tem o resultado esperado.
+        Assert.Equal(20, resultado);
+    }
 }
