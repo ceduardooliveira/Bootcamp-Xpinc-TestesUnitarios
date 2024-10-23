@@ -37,4 +37,17 @@ public class CalculadoraTests
         //Assert - Validar se tudo isso tem o resultado esperado.
         Assert.Equal(20, resultado);
     }
+
+    [Fact]
+    public void DeveVerificarSe4EhParERetornarVerdadeiro()
+    {
+        // Arrange
+        int numero = 4;
+
+        // Act
+        bool resultado = _calc.EhPar(numero);
+
+        // Assert
+        Assert.True(resultado);
+    }
 }
